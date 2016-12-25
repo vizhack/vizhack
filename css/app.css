@@ -1,5 +1,7 @@
 .landing {
-    height: 100vh;
+    min-height: 100vh;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .landing-left {
@@ -12,21 +14,117 @@
 
 .landing-slogan {
     font-size: 45px;
+    line-height: 48px;
     font-family: Kreon;
     text-transform: uppercase;
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
+    margin-bottom: 50px;
+}
+
+.landing-date {
+    font-family: 'Titillium Web', sans-serif;
+    color:  #383838;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.landing-venue {
+    font-family: 'Titillium Web', sans-serif;
+    color:  #59c5d1;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.landing-register {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 7px 15px;
+    border-width: 1px;
+    border-color:  #000000;
+    border-style: solid;
+    font-family: 'Titillium Web', sans-serif;
+    color:  #000000;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+.landing-register:hover {
+    background-color:  #000000;
+    color: #fff;
 }
 
 .filler-height {
-    height: 60vh;
+    min-height: 60vh;
+    overflow: auto;
 }
+
+.landing-right {
+    margin: 20px 0;
+    min-height: calc(100vh - 40px);
+    background-image: url('../img/techpark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-overlay {
+    background-color:  rgba(39, 53, 84, 0.6);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.section-bg {
+    color:  rgba(56, 46, 135, 0.501961);
+    font-size: 130px;/* Approximation due to font substitution */
+    font-weight: 700;
+}
+
+.section-title .text {
+  font: 130px sans-serif;
+  margin-top: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.section-title .text {
+  display: table;
+  white-space: nowrap;
+}
+
+.section-title .text:after {
+  border-top: 2px solid rgba(56, 46, 135, 0.501961);
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+
+.section-title .text:before {
+  right: 1.5%;
+}
+
+.section-title .text:after {
+  left: 1.5%;
+}
+
 
 .about {
     background-color: #22242e;
     color: #2d295a;
     font-size: 130pt;
 }
+
+
 .agenda {
     background-color: #ffffff;
     color: #fcd38f;
