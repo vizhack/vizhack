@@ -39,10 +39,16 @@
     text-align: center;
 }
 
-.landing-venue span{
+.landing-venue a {
     display: inline-block;
     padding-bottom: 3px;
+    color:  #59c5d1;
+    text-decoration: none;
     border-bottom: 1px solid #59c5d1;
+}
+
+.landing-venue a:hover {
+    color:  #59c5d1;
 }
 
 .landing-register {
@@ -59,6 +65,7 @@
     font-weight: 300;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s linear;
 }
 
