@@ -3,6 +3,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:false,
+        responsiveClass:true,
         responsive : {
             480 : {
                 items : 1
