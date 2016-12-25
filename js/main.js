@@ -3,15 +3,15 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:false,
-        responsive:{
-            0:{
-                items:1
+        responsive : {
+            480 : {
+                items : 1
             },
-            600:{
-                items:3
+            768 : {
+                items : 3
             },
-            1000:{
-                items:4
+            1024 : {
+                items : 4
             }
         }
     });

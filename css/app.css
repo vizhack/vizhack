@@ -130,7 +130,7 @@
   content: '';
   display: table-cell;
   position: relative;
-  top: 0.5em;
+  top: 0.6em;
   width: 100%;
 }
 
@@ -147,7 +147,7 @@
   content: '';
   display: table-cell;
   position: relative;
-  top: 0.5em;
+  top: 0.6em;
   width: 100%;
 }
 
@@ -183,11 +183,9 @@
 }
 
 
-
-
-
-
-
+.about .section-title .text {
+    margin-left: -30px;
+}
 
 .agenda {
     position: relative;
@@ -197,6 +195,7 @@
 
 .agenda .section-title .text {
   color: rgba(249, 167, 32, 0.501961);
+  margin-right: 130px;
 }
 
 .agenda .section-title.left-title .text:after,
@@ -204,13 +203,19 @@
   border-top: 2px solid rgba(249, 167, 32, 0.501961);
 }
 
-
 .agenda-content {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-top: 150px;
+    margin-top: 100px;
     padding-bottom: 100px;
     font-family: 'Titillium Web', sans-serif;
+    padding-top: 20px;
+}
+
+.agenda-content {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url('../img/date-start.png');
 }
 
 .agenda-content .date {
@@ -335,6 +340,7 @@
 
 .team .section-title .text {
   color: rgba(41, 75, 183, 0.501961);
+  margin-left: -10px;
 }
 
 .team .section-title.left-title .text:after,
@@ -349,6 +355,7 @@
 
 .speakers .section-title .text {
   color: #efadaf;
+  margin-left: -40px;
 }
 
 .speakers .section-title.left-title .text:after,
@@ -363,6 +370,7 @@
 
 .partners .section-title .text {
   color: rgba(88, 197, 209, 0.501961);
+  margin-right: 160px;
 }
 
 .partners .section-title.left-title .text:after,
@@ -462,6 +470,8 @@
     background-color: transparent;
     height: 250px;
     position: relative;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .team-member .name-wrap {
@@ -573,4 +583,43 @@
 
 .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
     transform: rotateY(180deg);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .landing-slogan {
+        font-size: 35px;
+        line-height: 38px;
+        margin: 30px 0;
+    }
+
+    .landing-date {
+        font-size: 22px;
+    }
+
+    .landing-venue {
+        font-size: 22px;
+    }
+
+    .section-title .text {
+        font-size: 60px;
+    }
+
+
+    .register-slogan {
+        font-size: 37px;
+        line-height: 48px;
+    }
+
+    .register-slogan-sub {
+        font-size: 24px;
+        line-height: 44px;
+    }
+
+    .register .register-btn {
+        font-size: 25px;
+    }
+
 }
