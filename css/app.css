@@ -1,0 +1,48 @@
+.landing {
+    height: 100vh;
+}
+
+.landing-left {
+    padding: 20px;
+}
+
+.landing-right {
+    background-color: #555555;
+}
+
+.landing-slogan {
+    font-size: 45px;
+    font-family: Kreon;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filler-height {
+    height: 60vh;
+}
+
+.about {
+    background-color: #22242e;
+    color: #2d295a;
+    font-size: 130pt;
+}
+.agenda {
+    background-color: #ffffff;
+    color: #fcd38f;
+}
+
+.speakers {
+    background-color: #f9f9f9;
+    color: #efadaf;
+}
+
+.partners {
+    background-color: #ffffff;
+    color: #abe2e8;
+}
+
+.team {
+    background-color: #f0f0f0;
+    color: #8c9dd3;
+}
