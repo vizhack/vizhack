@@ -18,8 +18,7 @@
     font-family: Kreon;
     text-transform: uppercase;
     text-align: center;
-    margin: 30px 0;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .landing-date {
@@ -28,14 +27,22 @@
     font-size: 30px;
     font-weight: 300;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .landing-venue {
     font-family: 'Titillium Web', sans-serif;
     color:  #59c5d1;
     font-size: 30px;
-    font-weight: 400;
+    line-height: 27px;
+    font-weight: 600;
     text-align: center;
+}
+
+.landing-venue span{
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #59c5d1;
 }
 
 .landing-register {
@@ -67,7 +74,6 @@
 
 .landing-right {
     margin: 20px 0;
-    min-height: calc(100vh - 40px);
     background-image: url('../img/techpark.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +85,7 @@
 .bg-overlay {
     background-color:  rgba(39, 53, 84, 0.6);
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
 }
 
 .section-bg {
