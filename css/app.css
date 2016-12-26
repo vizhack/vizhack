@@ -1,3 +1,58 @@
+.navbar .nav-item {
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: HelveticaLTStd;
+    color:  #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.navbar .nav-item .nav-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s linear;
+    z-index: -1;
+}
+
+.navbar .nav-item.violet .nav-bg {
+    background-color: #382d86;
+}
+
+.navbar .nav-item.yellow .nav-bg {
+    background-color: #f99300;
+}
+
+.navbar .nav-item.red .nav-bg {
+    background-color: #df363d;
+}
+
+.navbar .nav-item.cyan .nav-bg {
+    background-color: #59c5d1;
+}
+
+.navbar .nav-item.blue .nav-bg {
+    background-color: #294ab7;
+}
+
+.navbar .nav-item:hover {
+    color: #fff;
+}
+
+.navbar .nav-item:hover .nav-bg {
+    height: 100%;
+}
+
+
+
 .landing {
     min-height: 100vh;
     padding-right: 0.5rem;
@@ -68,6 +123,7 @@
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    text-transform: uppercase;
     transition: background-color 0.3s linear;
 }
 
@@ -334,7 +390,7 @@
 
 
 .team {
-    background-color: #f0f0f0;
+    background-color: #22242e;
     color: #8c9dd3;
 }
 
@@ -350,11 +406,11 @@
 
 
 .speakers {
-    background-color: #f9f9f9;
+    background-color: #22242e;
 }
 
 .speakers .section-title .text {
-  color: #efadaf;
+  color: rgba(223, 54, 60, 0.501961);;
   margin-left: -40px;
 }
 
@@ -471,6 +527,7 @@
     height: 250px;
     position: relative;
     max-width: 300px;
+    min-width: 275px;
     margin: 0 auto;
 }
 
@@ -501,6 +558,23 @@
     text-align: left;
 }
 
+.speakers .team-member .name-wrap .name {
+    color:  #df363c;
+}
+
+.team .team-member .name-wrap .name {
+    color:  #294ab7;
+}
+
+
+.speakers .team-member .overlay-text {
+    background-color:  #df363c;
+}
+
+.team .team-member .overlay-text {
+    background-color:  #294ab7;
+}
+
 .team-member .name-wrap .desc {
     padding-left: 15px;
     padding-bottom: 10px;
@@ -516,7 +590,7 @@
     position: absolute;
     width: 100%;
     height: 0;
-    background-color: #000;
+    background-color: #fff;
     color: transparent;
     transition: all 0.3s ease-in-out;
 }
