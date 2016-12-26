@@ -15,12 +15,21 @@
 }
 
 .navbar.scrolled .nav-item span {
-    display: none !important;
+    visibility: hidden !important;
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.navbar .nav-item span {
+    width: auto;
+    height: auto;
 }
 
 .navbar.scrolled .nav-item {
     margin-left: 3px;
     padding: 5px 4px;
+    font-size: 1px;
 }
 
 .navbar.scrolled .nav-item .nav-bg {
@@ -37,11 +46,15 @@
     font-weight: 700;
     text-align: left;
     position: relative;
-    transition: all 0.3s linear;
+    transition: height 0.3s linear;
     cursor: pointer;
     margin-left: -5px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.navbar .nav-item span {
+    transition: width 0.3s linear;
 }
 
 .navbar .nav-item .nav-bg {

@@ -38,6 +38,26 @@ $(document).ready(function() {
     } else {
       $('.navbar').removeClass("scrolled");
     }
+
+  });
+
+
+  $(document).scroll(function () {
+    var x = $(this).scrollTop(),
+        about = $('#about'),
+        speakers = $('#speakers'),
+        team = $('#team');
+
+    if (x >= about.offset().top && x < (about.offset().top + about.height())) {
+        $('.navbar .nav-item span').css("color", "#fff");
+    } else if (x >= speakers.offset().top && x < (speakers.offset().top + speakers.height())) {
+        $('.navbar .nav-item span').css("color", "#fff");
+    }else if (x >= team.offset().top && x < (team.offset().top + team.height())) {
+        $('.navbar .nav-item span').css("color", "#fff");
+    } else {
+      $('.navbar .nav-item span').css("color", "#000000");
+    }
+
   });
 
 });
