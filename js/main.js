@@ -20,15 +20,19 @@ $(document).ready(function() {
 
   $('.navbar').on({
     mouseenter: function () {
-      $('.navbar').removeClass("scrolled");
+      if(scroll > 0)
+        $('.navbar').removeClass("scrolled");
     },
     mouseleave: function () {
-       $('.navbar').addClass("scrolled");
+      if(scroll = 0)
+        $('.navbar').addClass("scrolled");
     }
   });
 
+  var scroll = 0;
+
   $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
+    scroll = $(window).scrollTop();
     if( scroll > 0 ) {
       $('.navbar').addClass("scrolled");
     } else {
