@@ -228,6 +228,10 @@
     z-index: 1;
 }
 
+.agenda-section-title .text .ka {
+    padding-left: 12px;
+}
+
 .agenda-section-title:before {
     border-top: 2px solid rgba(249, 167, 32, 0.501961);
     content: "";
@@ -593,6 +597,7 @@
 
 
 .team-wrap {
+    overflow: hidden;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 50px;
@@ -802,6 +807,9 @@
         margin-right: 0 !important;
     }
 
+    .agenda-section-title .text {
+        font-size: 60px;
+    }
 
     .register-slogan {
         font-size: 37px;
