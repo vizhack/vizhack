@@ -1,7 +1,11 @@
+.navbar {
+    margin-bottom: 15px;
+}
+
 .navbar .nav-item {
     display: inline-block;
-    padding: 5px 10px;
-    font-family: HelveticaLTStd;
+    padding: 5px 8px;
+    font-family: sans-serif;
     color:  #000000;
     font-size: 14px;
     font-weight: 700;
@@ -10,6 +14,8 @@
     transition: all 0.3s linear;
     cursor: pointer;
     margin-left: -5px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .navbar .nav-item .nav-bg {
@@ -73,7 +79,18 @@
     font-family: Kreon;
     text-transform: uppercase;
     text-align: center;
-    margin: 50px 0;
+    margin-top: 50px;
+}
+
+.landing-hashtag {
+    text-align: center;
+    font-family: Kreon;
+    color:  #df363c;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .landing-date {
@@ -139,6 +156,7 @@
 }
 
 .landing-right {
+    position: relative;
     margin: 20px 0;
     background-image: url('../img/techpark.jpg');
     background-size: cover;
@@ -149,9 +167,10 @@
 }
 
 .bg-overlay {
+    position: absolute;
     background-color:  rgba(39, 53, 84, 0.6);
     width: 100%;
-    min-height: calc(100vh - 40px);
+    height: 100%;
 }
 
 .section-bg {
@@ -262,7 +281,7 @@
 .agenda-content {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    margin-top: 100px;
+    margin-top: 110px;
     padding-bottom: 100px;
     font-family: 'Titillium Web', sans-serif;
     padding-top: 20px;
@@ -438,9 +457,9 @@
 
 .register {
     padding-top: 50px;
-    padding-bottom: 100px;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
+    min-height: 0
 }
 
 .register-slogan {
@@ -477,7 +496,7 @@
 
 .register .register-btn {
     display: inline-block;
-    margin: 0 auto;
+    margin: 30px auto;
     margin-top: 50px;
     padding: 7px 15px;
     border-width: 1px;
@@ -522,6 +541,44 @@
     margin-top: 75px;
 }
 
+
+
+.carousel-wrap .owl-dots {
+    display: none;
+}
+.carousel-wrap .owl-prev,
+.carousel-wrap .owl-next {
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    z-index: 100;
+    width: 40px;
+    height: 80px;
+    background-color: rgba(34, 36, 46, 0.6);
+    margin-top: -21px !important;
+}
+.carousel-wrap .owl-prev {
+    background-image: url(../img/icon-slide-left.png) !important;
+    background-size: 40% !important;
+    background-repeat: no-repeat;
+    background-position: 30% center;
+    left: 0;
+    border-radius: 0 40px 40px 0 ;
+}
+
+.carousel-wrap .owl-next {
+    background-image: url(../img/icon-slide-right.png) !important;
+    background-size: 40% !important;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    right: 0;
+    border-radius: 40px 0 0 40px;
+}
+
+
+
 .team-member {
     background-color: transparent;
     height: 250px;
@@ -536,7 +593,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #fff;
 }
 
 
