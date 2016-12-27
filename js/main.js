@@ -1,11 +1,17 @@
 $(document).ready(function() {
 
   $('.owl-carousel').owlCarousel({
-      loop:true,
+      loop:false,
       margin:10,
       autoWidth:true,
       nav: true,
-      navText: ["<div class='prev-arrow'></div>","<div class='next-arrow'></div>"]
+      navText: ["<div class='prev-arrow'></div>","<div class='next-arrow'></div>"],
+      responsive:{
+        0:{
+        },
+        1000:{
+        }
+    }
   });
 
   $('.lang-wrap .en-switch').on("click", function() {
@@ -33,11 +39,11 @@ $(document).ready(function() {
 
   $(window).scroll(function (event) {
     scroll = $(window).scrollTop();
-    if( scroll > 0 ) {
-      $('.navbar').addClass("scrolled");
-    } else {
-      $('.navbar').removeClass("scrolled");
-    }
+    // if( scroll > 0 ) {
+    //   $('.navbar').addClass("scrolled");
+    // } else {
+    //   $('.navbar').removeClass("scrolled");
+    // }
 
   });
 
@@ -63,11 +69,11 @@ $(document).ready(function() {
         speakers = $('#speakers'),
         team = $('#team');
 
-    if (x >= about.offset().top && x < (about.offset().top + about.height())) {
+    if (x >= (about.offset().top - 50) && x < (about.offset().top + about.height() + 100)) {
         $('.navbar .nav-item span').css("color", "#fff");
-    } else if (x >= speakers.offset().top && x < (speakers.offset().top + speakers.height())) {
+    } else if (x >= (speakers.offset().top - 30) && x < (speakers.offset().top + speakers.height() - 50)) {
         $('.navbar .nav-item span').css("color", "#fff");
-    }else if (x >= team.offset().top && x < (team.offset().top + team.height())) {
+    }else if (x >= (team.offset().top - 30) && x < (team.offset().top + team.height())) {
         $('.navbar .nav-item span').css("color", "#fff");
     } else {
       $('.navbar .nav-item span').css("color", "#000000");

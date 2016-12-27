@@ -19,8 +19,10 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
-        <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css">
+        <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -30,7 +32,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <main class="main">
+        <main class="main" id="main">
             <section class="landing">
                 <div class="row">
                     <div class="landing-left col-md-4 center-md col-sm-6 center-sm col-xs-12 center-xs">
@@ -105,10 +107,10 @@
                     </div>
                     <div class="landing-right col-md-8 col-sm-6 hidden-xs">
                         <div class="bg-overlay">
-
                             <div class="lang-wrap">
-                                <div class="ka-switch">geo</div>
-                                <div class="en-switch">eng</div>
+                                <span class="en-switch switch">EN</span>
+                                <span>/</span>
+                                <span class="ka-switch switch">ქა</span>
                             </div>
                         </div>
                     </div>
@@ -298,7 +300,7 @@
                 <div class="team-wrap">
                     <div class="row">
                         <div class="col-md-1"></div>
-                        <div class="col-md-11 carousel-wrap">
+                        <div class="col-md-11 col-sm-12 col-xs-12 carousel-wrap">
                             <div class="owl-carousel">
 
                                 <div class="team-member flip-container" >
@@ -435,11 +437,28 @@
 
             </section>
             <section class="partners filler-height" id="partners">
-            <div class="section-title right-title">
+                <div class="section-title right-title">
                     <span class="text">
                         <span class="en">partners</span>
                         <span class="ka ka-title">პარტნიორები</span>
                     </span>
+                </div>
+                <div class="partners-wrap">
+                    <div class="row">
+                        <a href="" class="partner col-md-3 col-sm-6 col-xs-12">
+                            <img src="img/US_logo.svg">
+                        </a>
+                        <a href="" class="partner col-md-3 col-sm-6 col-xs-12">
+                            <img src="img/JS_logo.svg">
+                        </a>
+                        <a href="" class="partner col-md-3 col-sm-6 col-xs-12">
+                            <img src="img/GITA_logo.svg">
+                        </a>
+                        <a href="" class="partner col-md-3 col-sm-6 col-xs-12">
+                            <img src="img/TBC_logo.svg">
+                        </a>
+                    </div>
+
                 </div>
             </section>
             <section class="team filler-height" id="team">
@@ -452,7 +471,7 @@
                 <div class="team-wrap">
                     <div class="row">
                         <div class="col-md-1"></div>
-                        <div class="col-md-11 carousel-wrap">
+                        <div class="col-md-11 col-sm-12 col-xs-12 carousel-wrap">
                             <div class="owl-carousel">
 
                                 <div class="team-member flip-container" >
@@ -601,10 +620,12 @@
                     Register
                 </a>
 
-                <div>
-                    <img src="img/logo-f.png">
+                <div style="position: relative;">
+                    <img src="img/logo-f.svg">
+                    <a href="#main" class="scrolltop-icon">
+                        <img src="img/backtotop.svg">
+                    </a>
                 </div>
-
 
             </section>
             </section>

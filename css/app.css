@@ -8,6 +8,20 @@
     display: none;
 }
 
+.lang-wrap {
+    padding: 5px 10px;
+    float: right;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.lang-wrap>span.switch {
+    cursor: pointer;
+}
+
 .navbar {
     margin-bottom: 15px;
     position: fixed;
@@ -40,7 +54,7 @@
 .navbar .nav-item {
     display: inline-block;
     padding: 5px 8px;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color:  #000000;
     font-size: 14px;
     font-weight: 700;
@@ -231,18 +245,14 @@
 }
 
 .agenda-section-title .text {
-    margin-left: calc(50% - 48px);
-    font: 130px sans-serif;
+    margin-left: calc(50% - 38px);
+    font: 130px 'Roboto Condensed', sans-serif;
     margin-top: 30px;
     text-align: left;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-}
-
-.agenda-section-title .text .ka {
-    padding-left: 12px;
 }
 
 .agenda-section-title:before {
@@ -266,10 +276,10 @@
 }
 
 .section-title .text {
-    font: 130px sans-serif;
+    font: 130px 'Roboto Condensed', sans-serif;
     margin-top: 30px;
     text-align: left;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -369,7 +379,7 @@
 .agenda-content {
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: url('../img/date-start.png');
+    background-image: url('../img/agenda.svg');
 }
 
 .agenda-content .date {
@@ -531,6 +541,24 @@
 .partners .section-title.right-title .text:before  {
     border-top: 2px solid rgba(88, 197, 209, 0.501961);
 
+}
+
+.partners .partners-wrap {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+
+.partners .partners-wrap .partner {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.partners .partners-wrap img {
+    max-height: 50px;
 }
 
 
@@ -796,10 +824,36 @@
     transform: rotateY(180deg);
 }
 
+.scrolltop-icon {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+}
 
 
+
+@media (max-width: 968px) {
+
+    .landing {
+        min-height: 0;
+    }
+
+}
 
 @media (max-width: 768px) {
+
+    .partners .partners-wrap {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+
+
+    .partners .partners-wrap .partner {
+        display: block;
+        text-align: left;
+    }
+
     .landing-slogan {
         font-size: 35px;
         line-height: 38px;
@@ -815,7 +869,7 @@
     }
 
     .section-title .text {
-        font-size: 60px;
+        font-size: 46px;
         margin-left: 0px !important;
         margin-right: 0 !important;
     }
@@ -836,6 +890,10 @@
 
     .register .register-btn {
         font-size: 25px;
+    }
+
+    .navbar .nav-item {
+        font-size: 10px;
     }
 
 }
