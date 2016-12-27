@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: 'DejaVuSansBoldCondensedM';
+  font-family: 'DejaVuSansRegularM';
   src:  url('../fonts/DejaVuSansRegularM.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,6 @@
 .ka.ka-title {
     font-family: "DejaVuSansBoldCondensedM", sans-serif !important;
 }
-
 
 .ka.ka-title-thin {
     font-family: "DejaVuSansRegularM", sans-serif !important;
@@ -43,6 +42,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 34px;
+    width: 44px;
 }
 
 .lang-wrap>span.switch {
@@ -228,6 +228,20 @@
     line-height: 27px;
     font-weight: 600;
     text-align: center;
+    position: relative;
+}
+
+.landing-venue .bg-pin {
+    margin-top: -40px;
+    margin-left: -22px;
+    position: absolute;
+    width: 52px;
+    height: 66px;
+    background: url(../img/pin.svg);
+}
+
+.landing-venue .ka {
+    font-size: 20px;
 }
 
 .landing-logo {
