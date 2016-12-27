@@ -124,6 +124,7 @@
 
 .landing-right {
     background-color: #555555;
+    min-height: calc(100vh - 40px);
 }
 
 .landing-slogan {
@@ -420,6 +421,18 @@
     border-bottom: 1px solid #959595;
 }
 
+.end-time {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    width: 50px;
+    text-align: center;
+    margin-left: -25px;
+    color:  #df363d;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .day-wrap {
     position: relative;
     margin-top: 80px;
@@ -438,8 +451,7 @@
 }
 
 .agenda-content .day-wrap>.row {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 4px;
 }
 
 .agenda-event .name {
@@ -465,11 +477,11 @@
 
 .event-marker .circle {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     position: absolute;
-    margin-left: -15px;
+    margin-left: -11px;
 }
 
 
@@ -689,7 +701,7 @@
 
 .team-member {
     background-color: transparent;
-    height: 250px;
+    height: 275px;
     position: relative;
     max-width: 300px;
     min-width: 275px;
@@ -706,7 +718,7 @@
 
 
 .team-member .name-wrap-o {
-    background-position: center top;
+    background-position: center -30px;
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
@@ -745,7 +757,7 @@
     padding-bottom: 10px;
     font-family: 'Titillium Web', sans-serif;
     color:  #474747;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 300;
     text-align: left;
 }
@@ -764,10 +776,36 @@
 .team-member .overlay-text .text {
     padding: 30px;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
     text-align: left;
 }
+
+.team-member .overlay-text .text .social-links {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.team-member .overlay-text .text .social-links a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.team-member .overlay-text .text .social-links .dot {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.7em;
+    line-height: 12px;
+}
+
+.team-member .overlay-text .text .social-links a:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
 
 .team-member:hover .overlay-text {
     display: block;
@@ -795,7 +833,7 @@
 
 .flip-container, .front, .back {
     width: 100%;
-    height: 250px;
+    height: 275px;
 }
 
 .flipper {
