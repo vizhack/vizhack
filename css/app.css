@@ -985,6 +985,10 @@
 
 @media (max-width: 768px) {
 
+    .agenda-event .name {
+        font-size: 15px;
+    }
+
     .partners .partners-wrap {
         margin-left: auto;
         margin-right: auto;
