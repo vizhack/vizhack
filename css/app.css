@@ -136,7 +136,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 6px;
+    height: 8px;
     background-color: #000;
     transition: all 0.3s linear;
     z-index: -1;
@@ -220,7 +220,7 @@
 .landing-date {
     font-family: 'Titillium Web', sans-serif;
     color:  #383838;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
@@ -229,7 +229,7 @@
 .landing-venue {
     font-family: 'Titillium Web', sans-serif;
     color:  #59c5d1;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 27px;
     font-weight: 600;
     text-align: center;
@@ -326,13 +326,13 @@
     overflow: hidden;
     position: absolute;
     top: 0;
+    margin-top: 60px;
     left: 0;
 }
 
 .agenda-section-title .text {
     margin-left: calc(50% - 38px);
     font: 130px 'Roboto Condensed', sans-serif;
-    margin-top: 30px;
     text-align: left;
     font-weight: 700;
     text-transform: uppercase;
@@ -353,6 +353,41 @@
 }
 
 
+.partners-section-title {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    color:  rgba(88, 197, 209, 0.501961);
+    margin-top: 60px;
+    top: 0;
+    left: 0;
+}
+
+.partners-section-title .text {
+    margin-left: calc(50% - 38px);
+    font: 130px 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.partners-section-title:before {
+    border-top: 2px solid rgba(88, 197, 209, 0.501961);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(50% - 50px);
+    z-index: 0;
+}
+
+
+
 .section-title {
     overflow: hidden;
     position: absolute;
@@ -362,7 +397,7 @@
 
 .section-title .text {
     font: 130px 'Roboto Condensed', sans-serif;
-    margin-top: 30px;
+    margin-top: 52px;
     text-align: left;
     font-weight: 700;
     text-transform: uppercase;
@@ -407,7 +442,7 @@
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     min-height: 100vh;
 }
 
@@ -438,6 +473,9 @@
     font-weight: 300;
 }
 
+.about .section-title {
+    width: 50%;
+}
 
 .about .section-title .text {
     margin-left: -30px;
@@ -462,7 +500,7 @@
 .agenda-content {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    margin-top: 70px;
+    margin-top: 130px;
     padding-bottom: 100px;
     font-family: 'Titillium Web', sans-serif;
     padding-top: 20px;
@@ -635,15 +673,7 @@
     color: #abe2e8;
 }
 
-.partners .section-title .text {
-  color: rgba(88, 197, 209, 0.501961);
-}
 
-.partners .section-title.left-title .text:after,
-.partners .section-title.right-title .text:before  {
-    border-top: 2px solid rgba(88, 197, 209, 0.501961);
-
-}
 
 .partners .partners-wrap {
     margin-top: 200px;
@@ -665,7 +695,7 @@
 
 
 .register {
-    padding-top: 50px;
+    padding-top: 80px;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
     min-height: 0
@@ -743,14 +773,9 @@
     overflow: hidden;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
-
-.carousel-wrap {
-    margin-top: 75px;
-}
-
 
 
 .carousel-wrap .owl-dots {
@@ -791,10 +816,7 @@
 
 .team-member {
     background-color: transparent;
-    height: 275px;
     position: relative;
-    max-width: 300px;
-    min-width: 275px;
     margin: 0 auto;
 }
 
@@ -937,8 +959,8 @@
 }
 
 .flip-container, .front, .back {
-    width: 100%;
-    height: 275px;
+    width: 270px;
+    height: 290px;
 }
 
 .flipper {
