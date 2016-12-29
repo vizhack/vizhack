@@ -10,7 +10,7 @@ $(document).ready(function() {
         0:{
           nav: false
         },
-        1000:{
+        768:{
         }
     }
   });
@@ -27,6 +27,14 @@ $(document).ready(function() {
       $('.ka-switch').addClass('active');
       $('.en').hide();
       $('.ka').show();
+  });
+
+  $('.sm-nav .mobile-nav .nav-item').on( "click", function() {
+    $('.sm-nav').hide('slow');
+  });
+
+  $('.sm-nav-toggle').on( "click", function() {
+      $('.sm-nav').show('slow');
   });
 
   $('.navbar').on({
@@ -68,22 +76,22 @@ $(document).ready(function() {
   });
 
 
-  $(document).scroll(function () {
-    var x = $(this).scrollTop(),
-        about = $('#about'),
-        speakers = $('#speakers'),
-        team = $('#team');
+  // $(document).scroll(function () {
+  //   var x = $(this).scrollTop(),
+  //       about = $('#about'),
+  //       speakers = $('#speakers'),
+  //       team = $('#team');
 
-    if (x >= (about.offset().top - 50) && x < (about.offset().top + about.height() + 100)) {
-        $('.navbar .nav-item span').css("color", "#fff");
-    } else if (x >= (speakers.offset().top - 30) && x < (speakers.offset().top + speakers.height() - 50)) {
-        $('.navbar .nav-item span').css("color", "#fff");
-    }else if (x >= (team.offset().top - 30) && x < (team.offset().top + team.height())) {
-        $('.navbar .nav-item span').css("color", "#fff");
-    } else {
-      $('.navbar .nav-item span').css("color", "#000000");
-    }
+  //   if (x >= (about.offset().top - 50) && x < (about.offset().top + about.height() + 100)) {
+  //       $('.navbar .nav-item span').css("color", "#fff");
+  //   } else if (x >= (speakers.offset().top - 30) && x < (speakers.offset().top + speakers.height() - 50)) {
+  //       $('.navbar .nav-item span').css("color", "#fff");
+  //   }else if (x >= (team.offset().top - 30) && x < (team.offset().top + team.height())) {
+  //       $('.navbar .nav-item span').css("color", "#fff");
+  //   } else {
+  //     $('.navbar .nav-item span').css("color", "#000000");
+  //   }
 
-  });
+  // });
 
 });

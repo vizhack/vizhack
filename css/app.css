@@ -23,12 +23,19 @@
     display: none;
 }*/
 
+
+.sm-nav-toggle {
+    display: none;
+}
+
 .sm-nav {
+    display: none;
     position: fixed;
     width: 100vh;
     height: 100vh;
     background-color: #fff;
     z-index: 999;
+    padding: 15px;
 }
 
 .sm-nav .mobile-nav {
@@ -46,6 +53,7 @@
 .sm-nav-toggle {
     text-align: left;
     cursor: pointer;
+    margin-top: -15px;
 }
 
 .sm-nav-toggle .nav-item {
@@ -615,7 +623,7 @@
 .line-bg {
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 46px;
     height: calc(100% - 20px);
     border-left: 1px solid #959595;
 }
@@ -623,7 +631,7 @@
 .line-bg-horizontal {
     position: absolute;
     left: 50%;
-    bottom: -30px;
+    bottom: -26px;
     width: 50px;
     margin-left: -25px;
     border-bottom: 1px solid #959595;
@@ -681,6 +689,7 @@
 .event-marker {
     width: 50px;
     text-align: center;
+    margin-top: 8px;
 }
 
 .event-marker .circle {
@@ -769,6 +778,7 @@
 
 .partners .partners-wrap img {
     /*max-height: 50px;*/
+    max-width: 100%;
 }
 
 
@@ -1036,7 +1046,7 @@
 
 
 
-.flip-container {
+/*.flip-container {
     perspective: 1000px;
 }
 
@@ -1073,7 +1083,7 @@
 
 .flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
     transform: rotateY(180deg);
-}
+}*/
 
 .scrolltop-icon {
     position: absolute;
@@ -1090,6 +1100,56 @@
 
 
 
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+    /*  UPDATED! flip the pane when hovered */
+    .flip-container:hover .back {
+        transform: rotateY(0deg);
+    }
+    .flip-container:hover .front {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 270px;
+    height: 290px;
+    /*hello*/
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(-180deg);
+}
+
+
 @media (max-width: 968px) {
 
     .landing {
@@ -1099,6 +1159,21 @@
 }
 
 @media (max-width: 768px) {
+
+    .event-marker {
+        margin-top: 0;
+    }
+
+    .event-marker.left-o {
+        position: relative;
+    }
+
+    .event-marker.left-o .circle {
+        position: absolute;
+        bottom: 0;
+    }
+
+
 
     .agenda-event .name {
         font-size: 15px;
@@ -1117,9 +1192,18 @@
     }
 
     .landing-slogan {
-        font-size: 35px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 30px;
         margin: 30px 0;
+        margin-bottom: 0;
+    }
+
+    .landing-slogan .ka {
+        line-height: 30px;
+    }
+
+    .landing-hashtag {
+        margin-bottom: 10px;
     }
 
     .landing-date {
@@ -1160,5 +1244,24 @@
     }
 
 
+    .landing-logo {
+        margin-top: 20px;
+    }
+
+    .landing-logo img {
+        max-height: 100px;
+    }
+
+    .sm-nav-toggle {
+        display: block;
+    }
+
+    .lg-nav {
+        display: none;
+    }
+
+    .landing-register {
+        margin-top: 30px;
+    }
 
 }
