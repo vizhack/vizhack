@@ -383,16 +383,13 @@
     font-weight: 700;
 }
 
-
-.pattern-bg-wrap {
-    position: relative;
-}
-
 .pattern-bg {
     position: absolute;
-    background: blue;
-    width: 100%;
+    background-image: url(../img/pattern.jpg);
+    background-size: 20px;
+    width: 8.333333%;
     height: 100%;
+    margin-left: -0.5rem;
 }
 
 .agenda-section-title {
@@ -515,13 +512,12 @@
     position: relative;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-top: 50px;
     padding-bottom: 60px;
     min-height: 100vh;
 }
 
 .about .about-text {
-    margin-top: 120px;
+    margin-top: 170px;
     padding: 20px;
     font-family: 'Titillium Web', sans-serif;
     color:  #ffffff;
@@ -772,7 +768,7 @@
 }
 
 .partners .partners-wrap img {
-    max-height: 66px;
+    /*max-height: 50px;*/
 }
 
 
