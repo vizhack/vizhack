@@ -19,11 +19,67 @@
   font-style: normal;
 }
 
+/*.navbar {
+    display: none;
+}*/
+
+.sm-nav {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.sm-nav .mobile-nav {
+    display: block !important;
+}
+
+
+.sm-nav .navbar .nav-item {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+.sm-nav-toggle {
+    text-align: left;
+    cursor: pointer;
+}
+
+.sm-nav-toggle .nav-item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 1px;
+}
+
+.sm-nav-toggle .nav-item.violet {
+    background-color: #382d86;
+}
+
+.sm-nav-toggle .nav-item.yellow {
+    background-color: #f99300;
+}
+
+.sm-nav-toggle .nav-item.red {
+    background-color: #df363d;
+}
+
+.sm-nav-toggle .nav-item.cyan {
+    background-color: #59c5d1;
+}
+
+.sm-nav-toggle .nav-item.blue {
+    background-color: #294ab7;
+}
 
 .ka.ka-title {
     font-family: "DejaVuSansBoldCondensedM", sans-serif !important;
 }
 
+.ka-switch,
 .ka.ka-title-thin {
     font-family: "DejaVuSansRegularM", sans-serif !important;
 }
@@ -47,6 +103,11 @@
 
 .lang-wrap>span.switch {
     cursor: pointer;
+    opacity: 0.5;
+}
+
+.lang-wrap>span.switch.active {
+    opacity: 1;
 }
 
 .fb-wrap {
@@ -245,6 +306,7 @@
     background: url(../img/pin.svg);
 }
 
+.landing-date .ka,
 .landing-venue .ka {
     font-size: 20px;
 }
@@ -319,6 +381,18 @@
     color:  rgba(56, 46, 135, 0.501961);
     font-size: 130px;
     font-weight: 700;
+}
+
+
+.pattern-bg-wrap {
+    position: relative;
+}
+
+.pattern-bg {
+    position: absolute;
+    background: blue;
+    width: 100%;
+    height: 100%;
 }
 
 .agenda-section-title {
@@ -447,13 +521,13 @@
 }
 
 .about .about-text {
-    margin-top: 90px;
+    margin-top: 120px;
     padding: 20px;
     font-family: 'Titillium Web', sans-serif;
     color:  #ffffff;
     font-size: 18px;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -466,6 +540,7 @@
 .about .about-text .title {
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
 }
 
 .about .about-text .sub-title {
@@ -478,7 +553,15 @@
 }
 
 .about .section-title .text {
-    margin-left: -30px;
+    margin-left: -20px;
+}
+
+.about .section-title .text .ka{
+    margin-left: 14px;
+}
+
+.speakers .section-title .text .ka {
+    margin-left: 35px;
 }
 
 .agenda {
@@ -676,8 +759,8 @@
 
 
 .partners .partners-wrap {
-    margin-top: 200px;
-    margin-bottom: 50px;
+    margin-top: 250px;
+    margin-bottom: 80px;
     padding-right: 7%;
     padding-left: 7%;
 }
@@ -686,7 +769,6 @@
 .partners .partners-wrap .partner {
     display: block;
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .partners .partners-wrap img {
@@ -777,6 +859,10 @@
     padding-bottom: 80px;
 }
 
+.carousel-wrap .owl-prev.disabled,
+.carousel-wrap .owl-next.disabled {
+    display: none;
+}
 
 .carousel-wrap .owl-dots {
     display: none;
@@ -839,7 +925,7 @@
 
 .team-member .name-wrap .name {
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 12px;
     font-family: 'Titillium Web', sans-serif;
     color:  #ffffff;
     font-size: 20px;
@@ -876,7 +962,7 @@
 
 .team-member .name-wrap .desc {
     padding-left: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     font-family: 'Titillium Web', sans-serif;
     color:  #474747;
     font-size: 13px;
@@ -993,6 +1079,13 @@
     position: absolute;
     bottom: 0;
     right: 30px;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
+
+.scrolltop-icon:hover {
+    opacity: 1;
 }
 
 
@@ -1014,7 +1107,7 @@
     .partners .partners-wrap {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px;
+        margin-top: 135px;
     }
 
 
@@ -1043,8 +1136,9 @@
         margin-right: 0 !important;
     }
 
+    .partners-section-title .text,
     .agenda-section-title .text {
-        font-size: 60px;
+        font-size: 46px;
     }
 
     .register-slogan {
@@ -1061,8 +1155,10 @@
         font-size: 25px;
     }
 
-    .navbar .nav-item {
-        font-size: 10px;
+    .agenda-content {
+        margin-top: 75px;
     }
+
+
 
 }

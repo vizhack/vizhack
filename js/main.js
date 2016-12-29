@@ -8,6 +8,7 @@ $(document).ready(function() {
       navText: ["<div class='prev-arrow'></div>","<div class='next-arrow'></div>"],
       responsive:{
         0:{
+          nav: false
         },
         1000:{
         }
@@ -15,11 +16,15 @@ $(document).ready(function() {
   });
 
   $('.lang-wrap .en-switch').on("click", function() {
+      $('.ka-switch').removeClass('active');
+      $('.en-switch').addClass('active');
       $('.ka').hide();
       $('.en').show();
   });
 
   $('.lang-wrap .ka-switch').on( "click", function() {
+      $('.en-switch').removeClass('active');
+      $('.ka-switch').addClass('active');
       $('.en').hide();
       $('.ka').show();
   });
