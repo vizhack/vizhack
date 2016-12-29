@@ -386,7 +386,7 @@
 .pattern-bg {
     position: absolute;
     background-image: url(../img/pattern.jpg);
-    background-size: 20px;
+    /*background-size: 20px;*/
     width: 8.333333%;
     height: 100%;
     margin-left: -0.5rem;
