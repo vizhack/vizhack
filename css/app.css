@@ -35,6 +35,8 @@
     background-color: #fff;
     z-index: 999;
     padding: 15px;
+    left: 0;
+    top: 0;
 }
 
 .sm-nav .mobile-nav {
@@ -1252,7 +1254,8 @@
     }
 
     .sm-nav-toggle {
-        display: block;
+        display: inline-block;
+        float: left;
     }
 
     .lg-nav {
