@@ -98,6 +98,10 @@
     display: none;
 }
 
+.partners .partners-wrap .partner.ka {
+    display: none;
+}
+
 .lang-wrap {
     margin-top: -27px;
     padding: 0px 10px;
@@ -526,6 +530,7 @@
 }
 
 .about .about-text {
+    z-index: 10;
     margin-top: 170px;
     padding: 20px;
     font-family: 'Titillium Web', sans-serif;
@@ -778,7 +783,7 @@
 }
 
 .partners .partners-wrap img {
-    /*max-height: 50px;*/
+    max-height: 66px;
     max-width: 100%;
 }
 
