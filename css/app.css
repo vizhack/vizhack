@@ -1116,9 +1116,20 @@
         min-height: 0;
     }
 
+
+
 }
 
 @media (max-width: 768px) {
+
+    .fb-wrap .hover{
+        display: block;
+    }
+
+    .fb-wrap .default{
+        display: none;
+    }
+
 
     .about .section-title {
         width: 100%;
