@@ -2,6 +2,9 @@
   display: none;
 }
 
+.ka-switch {
+	opacity: 1 !important;
+}
 
 .partners .partners-wrap .partner.en {
     display: none;

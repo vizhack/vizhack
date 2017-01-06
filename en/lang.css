@@ -2,6 +2,10 @@
   display: none;
 }
 
+.en-switch.en-switch {
+	opacity: 1 !important;
+}
+
 .partners .partners-wrap .partner.ka {
     display: none;
 }
