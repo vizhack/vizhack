@@ -95,11 +95,6 @@
 
 .ka {
     font-family: "DejaVu Sans", sans-serif !important;
-    display: none;
-}
-
-.partners .partners-wrap .partner.ka {
-    display: none;
 }
 
 .lang-wrap {
@@ -107,19 +102,20 @@
     padding: 0px 10px;
     float: right;
     font-family: 'Roboto Condensed', sans-serif;
-    color: rgba(0,0,0,0.7);
     font-size: 14px;
     font-weight: 700;
     line-height: 34px;
     width: 44px;
 }
 
-.lang-wrap>span.switch {
+.lang-wrap>a.switch {
     cursor: pointer;
     opacity: 0.5;
+    color: rgba(0,0,0,0.7) !important;
+    text-decoration: none;
 }
 
-.lang-wrap>span.switch.active {
+.lang-wrap>a.switch.active {
     opacity: 1;
 }
 
