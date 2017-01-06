@@ -1130,6 +1130,10 @@
         display: none;
     }
 
+    .lang-wrap {
+        width: 50px;
+    }
+
 
     .about .section-title {
         width: 100%;
