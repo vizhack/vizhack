@@ -1116,15 +1116,16 @@
     transform: rotateY(-180deg);
 }
 
+.fb-video {
+    width: 500px;
+}
+
 
 @media (max-width: 968px) {
 
     .landing {
         min-height: 0;
     }
-
-
-
 }
 
 @media (max-width: 768px) {
@@ -1255,4 +1256,10 @@
         margin-top: 30px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .fb-video {
+        width: 300px;
+    }
 }

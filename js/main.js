@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
+  $('.owl-carousel.default').owlCarousel({
       loop:false,
       margin:10,
       autoWidth:true,
@@ -11,7 +11,17 @@ $(document).ready(function() {
         },
         768:{
         }
-    }
+      }
+  });
+
+  $('.owl-carousel.video-carousel').owlCarousel({
+      loop:false,
+      margin:10,
+      autoWidth:true,
+      nav: true,
+      navText: ["<div class='prev-arrow'></div>","<div class='next-arrow'></div>"],
+      touchDrag: false,
+      mouseDrag: false
   });
 
   if($('.popup').length > 0) {
@@ -87,6 +97,16 @@ $(document).ready(function() {
     });
   });
 
+
+  $(window).resize(function(){
+      setTimeout(function(){
+        $(".owl-carousel.video-carousel .owl-nav").removeClass('disabled');
+      }, 1000);
+  })
+  $(".owl-carousel.video-carousel .owl-nav").removeClass('disabled');
+  $(".owl-carousel.video-carousel .owl-nav div").on('click', function(){
+    $(".owl-carousel.video-carousel .owl-nav").removeClass('disabled'); 
+  });
 
   // $(document).scroll(function () {
   //   var x = $(this).scrollTop(),
