@@ -109,6 +109,7 @@ $(document).ready(function() {
     });
   });
 
+  alert();
 
   $(window).resize(function(){
       if($(window).width() < 500) {
