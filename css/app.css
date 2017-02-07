@@ -1116,13 +1116,6 @@
     transform: rotateY(-180deg);
 }
 
-.owl-carousel.video-carousel.small-carousel {
-    display: none;
-}
-
-.owl-carousel.video-carousel.big-carousel .fb-video {
-    width: 500px;
-}
 
 @media (max-width: 968px) {
 
@@ -1261,13 +1254,9 @@
 
 }
 
-
 @media screen and (max-width: 500px) {
-    .owl-carousel.video-carousel.big-carousel {
-        display: none;
-    }
 
-    .owl-carousel.video-carousel.small-carousel {
-        display: block;
-    }
+    .owl-item, iframe, .owl-item .video, .owl-item .fb-video, .owl-item .fb-video > span,   {
+        width: 300px !important;
+    }    
 }
