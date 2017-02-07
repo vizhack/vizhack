@@ -47,6 +47,10 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
+.landing-right td .names {
+	max-width: 20vw;
+}
+
 .landing-right th, td {
 	padding: 10px;
 	text-align: left;
