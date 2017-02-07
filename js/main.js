@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('.owl-carousel').owlCarousel({
       loop:false,
       margin:10,
@@ -15,7 +14,8 @@ $(document).ready(function() {
     }
   });
 
-  $('.popup').fancybox({
+  if($('.popup').length > 0) {
+    $('.popup').fancybox({
           openEffect  : 'none',
           closeEffect : 'none',
             width   : '95%',
@@ -23,7 +23,9 @@ $(document).ready(function() {
           helpers : {
               media : {}
           }
-  });
+    });
+  }
+
 
   $('.lang-wrap .en-switch').on("click", function() {
       $('.ka-switch').removeClass('active');
