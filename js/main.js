@@ -15,6 +15,16 @@ $(document).ready(function() {
     }
   });
 
+  $('.popup').fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+            width   : '95%',
+            height  : '95%',
+          helpers : {
+              media : {}
+          }
+  });
+
   $('.lang-wrap .en-switch').on("click", function() {
       $('.ka-switch').removeClass('active');
       $('.en-switch').addClass('active');
