@@ -1116,10 +1116,13 @@
     transform: rotateY(-180deg);
 }
 
-.fb-video {
-    width: 500px;
+.owl-carousel.video-carousel.small-carousel {
+    display: none;
 }
 
+.owl-carousel.video-carousel.big-carousel .fb-video {
+    width: 500px;
+}
 
 @media (max-width: 968px) {
 
@@ -1258,8 +1261,13 @@
 
 }
 
-@media screen and (max-width: 400px) {
-    .fb-video {
-        width: 300px;
+
+@media screen and (max-width: 500px) {
+    .owl-carousel.video-carousel.big-carousel {
+        display: none;
+    }
+
+    .owl-carousel.video-carousel.small-carousel {
+        display: block;
     }
 }
