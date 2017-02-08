@@ -104,7 +104,13 @@
 
 @media screen and (max-width: 400px) {
 	.landing-right {
-		font-size: 11px; 
+		/*font-size: 11px; */
 		letter-spacing: 1.6px;
+		overflow-x: scroll;
+	}
+
+	.landing-right table {
+		overflow-x: auto;
+		display: block;
 	}
 }
