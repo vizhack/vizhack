@@ -108,6 +108,7 @@
     width: 48px;
 }
 
+
 .lang-wrap>a.switch {
     cursor: pointer;
     opacity: 0.5;
@@ -117,6 +118,10 @@
 
 .lang-wrap>a.switch.active {
     opacity: 1;
+}
+
+.lang-wrap .ka-switch {
+    font-size: 12.5px;
 }
 
 .fb-wrap {
