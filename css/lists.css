@@ -25,6 +25,7 @@
 
 .landing-right table {
 	margin-top: 5px;
+	table-layout: fixed;
 }
 
 
@@ -112,5 +113,6 @@
 	.landing-right table {
 		overflow-x: auto;
 		display: block;
+    	width: 100%;  
 	}
 }
