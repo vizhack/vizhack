@@ -31,9 +31,6 @@ $(document).ready(function() {
       }
   });
 
-  console.log('!! test');
-
-
 
 
   if($('.popup').length > 0) {
